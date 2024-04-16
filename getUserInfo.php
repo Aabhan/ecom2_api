@@ -19,7 +19,7 @@ $token = $_POST['token'];
 $userId = getUserId($token);
 
 
-$sql = "SELECT user_id,full_name,email,role,phone_number from users where user_id='$userId'";
+$sql = "SELECT user_id,full_name,email,role,phone_number,user_location from users where user_id='$userId'";
 $result = mysqli_query($CON, $sql);
 
 if ($result) {
